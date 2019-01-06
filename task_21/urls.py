@@ -49,6 +49,7 @@ urlpatterns = [
     path('api/<int:restaurant_id>/update/', RestaurantUpdateView.as_view(), name='api-update'),
     path('api/<int:restaurant_id>/delete/', RestaurantDeleteView.as_view(), name='api-delete'),
     path('api/register/', RegisterView.as_view(), name='api-register'),
+
 ]
 
 if settings.DEBUG:
